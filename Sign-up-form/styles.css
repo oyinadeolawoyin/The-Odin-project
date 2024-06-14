@@ -15,7 +15,6 @@
 }
 
 body {
-    background-color: rgb(15, 10, 10);
     height: 100%;
     overflow: hidden;
 }
@@ -46,7 +45,6 @@ body > div > div {
 .img {
     width: 400px;
     height: 100%;
-    object-fit: cover;
 }
 
 #myodin {
@@ -60,8 +58,6 @@ body > div > div {
     gap: 95px;
 
     position: relative;
-    margin-left: 150px;
-    margin-right: 150px;
     height: 100%;
 
     background-color: white;
