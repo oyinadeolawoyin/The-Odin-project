@@ -79,10 +79,9 @@ h1 {
     margin-top: 6px;
     padding: 3px;
 
-
     background-color: rgb(24, 24, 119);
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 #bookStore input[type= "file"] {
