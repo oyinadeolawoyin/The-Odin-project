@@ -16,12 +16,13 @@
     <button id="openFormButton">Add book</button>
     <div id="popupOverlay" class="popup-overlay">
         <div class="popup-form">
-            <h2>* Fields are required</h2>
+            <h2 class="required">* Fields are required</h2>
             <form id="popupForm">
+                <button type="button" id="closeFormButton">Close</button>
                 <label for="title">Book Title:</label>
-                <input type="text" id="title" name="title" class="bookTitle">
+                <input type="text" id="title" name="title" class="bookTitle" placeholder="*Title" required />
                 <label for="author">Author:</label>
-                <input type="text" id="author" name="author" class="bookAuthor">
+                <input type="text" id="author" name="author" class="bookAuthor" placeholder="*Author" required />
                 <label for="page">Pages:</label>
                 <input type="number" name="page" id="page" class="bookPages">
                 <div>
@@ -31,7 +32,6 @@
                     <label for="no">No</label>
                     <input type="radio" name="status" id="no" class="radio">
                 </div>
-                <button type="button" id="closeFormButton">Close</button>
                 <button type="submit" id="submitForm" class="addBook">Add</button>
             </form>
         </div>

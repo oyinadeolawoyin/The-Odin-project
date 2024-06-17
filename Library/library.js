@@ -58,7 +58,7 @@ let formSubmit = document.querySelector(".addBook");
 
 formSubmit.addEventListener("click", function(event) {
     event.preventDefault();
-    
+
     const popupOverlay = document.getElementById("popupOverlay");
     popupOverlay.style.display = "none";
     
@@ -66,6 +66,7 @@ formSubmit.addEventListener("click", function(event) {
     let bookTitle = document.querySelector(".bookTitle");
     let bookAuthor = document.querySelector(".bookAuthor");
     let bookPages = document.querySelector(".bookPages");
+    
     let store = new Book(bookTitle.value, bookAuthor.value, bookPages.value)
     let storageBook = store.add()
 
@@ -75,7 +76,7 @@ formSubmit.addEventListener("click", function(event) {
         form.reset();
     });
 
-    return storageBook
+    return storageBook; 
 });
 
 function displayBook(infoBook) {
@@ -137,7 +138,6 @@ function displayBook(infoBook) {
                     else {
                         if(index > 0) {
                             joinWord += word[i];
-                            console.log(joinWord)
                         }  
                     }
                 }
@@ -148,7 +148,7 @@ function displayBook(infoBook) {
             list.splice(0,);
     
             let bookToRemove = new Book();
-            bookToRemove.removeBook(list2); console.log(myLibrary)
+            bookToRemove.removeBook(list2);
             parentDiv.remove();
         
         });

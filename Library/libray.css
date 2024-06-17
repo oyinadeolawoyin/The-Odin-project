@@ -61,7 +61,7 @@ form {
     position: absolute;
 
     background-color: rgb(24, 24, 119);
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px blue;
     border-radius: 6px;
     color: white;
 }
@@ -73,7 +73,32 @@ form button {
     text-align: center;
     font-size: 16px;
 
-    border: 2px solid white;
+    border: none;
+}
+
+#closeFormButton {
+    width: 40%;
+    height: 23px;
+    margin-left: 60%;
+
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(24, 24, 119);
+    box-shadow: 0 0 8px white;
+}
+
+.addBook {
+    margin-top: 10px;
+
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+
+    color: white;
+    background-color: rgb(24, 24, 119);
+    box-shadow: 0 0 8px white;
 }
 
 #bookStore {
